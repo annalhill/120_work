@@ -1,34 +1,65 @@
 // Creating an array for the sketch
-var expand = [];
+var expand = [ ];
+let a = 0;
 
-
-
+let option = 1
 function setup() {
   // Canvas will fit the width and height of the browser screen that the user opens- will only re-adjust if page is refreshed
   createCanvas( windowWidth, windowHeight);
 	noStroke();
+
+  for (var i = 0; i < 20; i++) {
+
+  expand.push(
+    {
+          period: { x: random(100, 100), y: random(100, 100) },
+          maxSize: random(4),
+          pos: {
+              x: random(width),
+              y: random(height)
+          }
+      } //end looping circles
+   );// end array push
+} // end for loop
+
 }
 
 function draw() {
   // Background color is white
-  background (255);
+  background (0);
   // A variable to help tell the program to load the ellipses in altered dimensions, etc.
-  let expandSize = 10
 
-  for(let y = expandSize; y < height; y += pad);
-  for(let x = expandSize; x < height; x += pad);
+  let pad = width / height;
+
+  // determine the number of smileys to draw in the array
+// based on mouse position
+// i.e. left=0 - right=all
+let numToDraw = map( mouseX, mouseY, width, 1, expand.length );
+for ( let i = 0; i < numToDraw; i++ ) {
+    // draw the smileys
+    drawLoopingCircles( expand[i], a );
+}
+
+}
+
+function drawLoopingCircles () {
+
+  let numPerRow = 50;
+  let circleSize = 10;
+  let pad = width / numPerRow;
+
+  if ( option == 1) {
+    for(var y = circleSize; y < height; y = y + pad ) {
+    for(var x = circleSize; x < width; x = x + pad ){
+        fill(120, 280, random(255) );
+        loopingCircles(mouseX, mouseY);
+        circleSize = Math.abs(random(5, 10)) | 0;
+    }
+
+    }
 
   }
-
-  // Defining where I would like the ellipses to move/ be
-  loopingCircles (expandSize, expandSize, 1);
-  loopingCircles (expandSize, expandSize, 1);
-  loopingCircles (expandSize, expandSize, 1);
-  loopingCircles (400, 400, 1);
-  loopingCircles (100, 100, 1);
-  loopingCircles (500, 200, 1);
-  loopingCircles (100, 100, 1);
-  loopingCircles (50, 50, 1);
+}
 
 function loopingCircles (posX, posY, scaleX, scaleY) {
   // Starting sandbox
@@ -39,24 +70,12 @@ function loopingCircles (posX, posY, scaleX, scaleY) {
   scale(scaleX, scaleY);
 
   //These parameters are defining what the circle looks like and where its starting position is (draw)
-  stroke (0);
+  stroke (255);
   strokeWeight(2);
-  ellipse (200, 200, 200);
+  fill ('rgb(78, 62, 121)');
+  ellipse (30, 30, 30);
 
   // Ending sandbox
   pop();
-
-}
-
-
-
-
-
-
-
-
-
-
-
 
 }
