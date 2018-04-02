@@ -79,8 +79,8 @@ function addThings( value1, value2 ) {
 
     // 2. Return the value
     return result;
-}
-```
+    }
+    ```
 
 
 #### Process:
@@ -94,4 +94,4 @@ After working through some weird syntax and html kinks with Emily at office hour
 
 From there I worked on the expand array and how it functions with expand.push, a class function in which I was not familiar with and also didn't see very many notes on in the lesson.
 
-In the end I was able to get a purple dot to track my mouse around the screen in specific intervals through my sandbox functions and the array that I built and hopefully properly used. 
+In the end I was able to get a purple dot to track my mouse around the screen in specific intervals through my sandbox functions and the array that I built and hopefully properly used.
