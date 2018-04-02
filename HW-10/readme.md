@@ -88,3 +88,10 @@ What I am going to attempt to do in this homework sample is adapt an array to cr
 
 Thus far in the project, I have managed to get all of the ellipses to show up in the sandbox function loopingCircles.
 Now I am looking to try and animate those ellipses.
+
+I came back to this project today, 4/1 to see if I could make it more interesting/ use my array in a more appropriate manner.
+After working through some weird syntax and html kinks with Emily at office hours I was able to get the original sketch up and running.
+
+From there I worked on the expand array and how it functions with expand.push, a class function in which I was not familiar with and also didn't see very many notes on in the lesson.
+
+In the end I was able to get a purple dot to track my mouse around the screen in specific intervals through my sandbox functions and the array that I built and hopefully properly used. 
