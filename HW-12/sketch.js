@@ -49,7 +49,7 @@ function two(){
 function three(){
   // Set the hue according to the slider
   stroke(changeThree.value(), 255, 255);
-  fill(changeThr.value(), 255, 255, 127);
+  fill(changeThree.value(), 255, 255, 127);
   quad(660, 800, 300, 200);
   stroke(60);
   strokeWeight(4);

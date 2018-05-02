@@ -9,4 +9,5 @@ Use the examples from in class to study how to make your objects aware of each o
 You are free to create whatever you want for this sketch. If you are having a hard time coming up with ideas, perhaps consider implementing a simple game that you know of, some sort of generative pacman sketch (similar to the last page), or a “basic ecosystem” where objects search around for each other.
 
 - The Process:
-- Not quite sure what I am doing here yet... 
+- Not quite sure what I am doing here yet...
+- As of right now I have installed three HTML sliders that via control from the user, can manipulate the colors of the shapes and lines of the screen
