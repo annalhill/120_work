@@ -1,6 +1,8 @@
 # Anna Louise Hill
 # Homework 12
 
+[live site](https://annalhill.github.io/120_work/HW-12/index.html)
+
 - The Assignment:
 This week, you should develop a sketch where objects, created from one or more classes, are “aware” of each other, and can interact with each other.
 
